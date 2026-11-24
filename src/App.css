@@ -1,0 +1,84 @@
+
+/* Main Quiz Container */
+.quiz-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Quiz Heading */
+.quiz-container h1 {
+  color: #2563eb;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Question */
+.quiz-container h2 {
+  color: #333333;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+/* Answer Buttons */
+.quiz-container button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background-color: white;
+  color: #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Hover */
+.quiz-container button:hover:not(:disabled) {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Disabled Buttons */
+.quiz-container button:disabled {
+  background-color: #e5e7eb;
+  color: #777777;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* Next and Restart Buttons */
+.quiz-container button:last-child {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  margin-top: 20px;
+}
+
+/* Next and Restart Hover */
+.quiz-container button:last-child:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quiz-container {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+
+  .quiz-container h1 {
+    font-size: 26px;
+  }
+
+  .quiz-container h2 {
+    font-size: 18px;
+  }
+}
